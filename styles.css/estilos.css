@@ -403,6 +403,7 @@ li span {
     border-radius: 10px;
     display: flex;
     justify-content: center;
+    min-width: 100%;
     width: 90%;   
 }
 
@@ -422,7 +423,7 @@ li span {
     justify-content: center;
     flex-direction: column;
     height: 80%;
-    width: 80%;
+    width: 30%;
     list-style-type: none;
     padding-top: 20px;
 }
@@ -430,7 +431,7 @@ li span {
 .contenedor_boton{
     align-items: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
     height: 150px;
     width: 150px;
@@ -442,9 +443,8 @@ li span {
 
 .botones ul li h4{
     color: white;
-    font-size: calc(0.3rem + 0.5vw);
+    font-size: calc(0.4rem + 0.4vw);
     font-family: 'Playfair Display', serif;
-    padding: 10px;
 }
 
 .contenedor_boton i{
