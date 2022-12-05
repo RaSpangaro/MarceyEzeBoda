@@ -433,7 +433,8 @@ li span {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 150px;
+    padding-left: 10px;
+    height: 120px;
     width: 150px;
 }
 
@@ -458,9 +459,9 @@ li span {
     display: flex;
     border-radius: 50%;
     border: none;
-    height: 60px;
+    height: 70px;
     justify-content: center;
-    width: 60px;
+    width: 70px;
 }
 
 .contenedor_boton button:hover {
@@ -588,7 +589,7 @@ footer{
     height: 300px;
     border-radius: 10px;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     background-color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
@@ -611,10 +612,16 @@ footer{
 }
 
 #interior p{
-    padding: 10px;
-    font-size: calc(0.5rem + 0.5vw);
+    width: 70%;
+    font-size: calc(0.5rem + 0.8vw);
+    text-align: center;
 }
 
+.h2{
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+}
 
 .home{
     align-items: center;
