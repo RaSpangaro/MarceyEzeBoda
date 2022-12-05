@@ -12,6 +12,7 @@ html{
 
 body{
     font-family: 'Playfair Display', serif;
+    padding: 20px;
 }
 
 #contenedor_header{
@@ -60,7 +61,7 @@ main{
     width: 100%;
 }
 
-.container_main {
+#contenedor_main {
     height: 80%;
     width: 100%;
     display: flex;
@@ -76,18 +77,24 @@ main{
     overflow: hidden;
     box-shadow: 0 70px 63px -60px #000;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
 }
 
-.card_main img{
+.card img{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.card_main div img{
     align-items: center;
     border-radius: 10px;
     height: auto;
     display: flex;
     margin: 10px;
-    max-width: 100;
+    min-width: 80%;
     width: 70%;
 
 }
@@ -97,6 +104,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 30px;
     height: 200%;
     width: 100%;
 }
@@ -383,7 +391,9 @@ li span {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    min-width: 100%;
     padding-top: 30px;
+    padding-bottom: 30px;
     width: 100%;
 }
 
@@ -393,7 +403,7 @@ li span {
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    width: 80%;   
+    width: 90%;   
 }
 
 .botones ul{
@@ -401,6 +411,7 @@ li span {
     display: flex;
     justify-content: center;
     padding-left: 30px;
+    padding-right: 30px;
     width: 100%;
 }
 
@@ -409,15 +420,21 @@ li span {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 200px;
+    height: 150px;
     width: 250px;
+    list-style-type: none;
+    padding: 20px;
 }
 
 .contenedor_boton{
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
+}
+
+.contenedor_boton a{
+    text-decoration: none;
 }
 
 .botones ul li h4{
@@ -427,21 +444,27 @@ li span {
     padding: 10px;
 }
 
-.botones ul li i{
+.contenedor_boton i{
     color: lightcoral;
     font-size: calc(1.1rem + 1.2vw);
 }
 
-.botones ul li button{
+
+.contenedor_boton button{
     align-items: center;
     display: flex;
     border-radius: 50%;
     border: none;
-    height: 80px;
+    height: 60px;
     justify-content: center;
-    width: 80px;
+    width: 60px;
 }
 
+.contenedor_boton button:hover {
+    background-color: rgb(240, 239, 237);
+    color: rgb(103, 91, 61);
+    border: 2px solid white; 
+}
 
 /*--------------------------------------------------------FOOTER------------------------------------------------------------------*/
 footer{
@@ -451,6 +474,7 @@ footer{
     height: 150%;
     flex-direction: column;
     justify-content:center;
+    min-width: 100%;
     width: 100%;
 }
 
@@ -469,32 +493,33 @@ footer{
     color: white;
     font-family: 'Playfair Display', serif;
     justify-content: center;
-    font-size: calc(0.5em + 0.8vw);
-    padding: 20px;
+    font-size: calc(0.5em + 0.5vw);
+    padding: 10px;
     width: 100%;
 }
 
 .redes i{
-    font-size: 1.3em;
+    font-size: calc(0.8em + 0.8vw);
     color: lightcoral;
     padding-left: 10px;
 }
 
 .hashtag{
     color: lightcoral;
+    font-size: calc(0.8em + 0.8vw);
 }
 
 .derechos{
     align-items: center;
     display: flex;
     font-family: 'Playfair Display', serif;
-    font-size: 0.8em;
+    font-size: calc(0.5em + 0.5vw);
     justify-content: space-around;
     color: azure;
 }
 
 .derechos i{
-    font-size: 1.5em;
+    font-size: calc(0.5em + 0.5vw);
     color: lightcoral;
     padding: 5px;
 }
@@ -580,11 +605,8 @@ footer{
     width: 100%;
 }
 
-.home form{
-    align-items: center;
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
+.home a{
+    text-decoration: none;
 }
 
 .boton_hoja{
@@ -602,8 +624,8 @@ footer{
 }
 
 .boton_hoja:hover {
-    background-color: rgb(103, 91, 61);
-    color: white;
+    background-color: rgb(240, 239, 237);
+    color: rgb(103, 91, 61);
     border: 2px solid white; 
 }
 
